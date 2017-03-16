@@ -2,7 +2,7 @@ package system;
 
 import com.yunfa.common.utils.IdWorker;
 import com.yunfa.system.entities.User;
-import com.yunfa.system.service.UserService;
+import com.yunfa.system.service.user.UserService;
 import common.SpringTestBase;
 import org.junit.Test;
 

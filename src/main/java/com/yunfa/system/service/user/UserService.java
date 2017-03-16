@@ -1,4 +1,4 @@
-package com.yunfa.system.service;
+package com.yunfa.system.service.user;
 
 import com.yunfa.system.entities.User;
 import org.springframework.stereotype.Service;

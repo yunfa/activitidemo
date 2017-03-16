@@ -6,7 +6,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.yunfa.system.service.UserService;
+import com.yunfa.system.service.ativiti.ActivitiService;
 
 /**
  * 
@@ -14,14 +14,14 @@ import com.yunfa.system.service.UserService;
  * @date 2017年3月16日
  */
 @Controller
-public class IndexController {
+public class ActivitiController {
 
 	@Resource
-	private UserService userService;
+	private ActivitiService activitiService;
 
 	@RequestMapping("/")
 	public ModelAndView index() {
-		System.out.println("index....");
+		System.out.println("activiti index....");
 		ModelAndView view = new ModelAndView("index");
 		return view;
 	}

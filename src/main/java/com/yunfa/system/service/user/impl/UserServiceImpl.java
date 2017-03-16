@@ -1,8 +1,8 @@
-package com.yunfa.system.service.impl;
+package com.yunfa.system.service.user.impl;
 
 import com.yunfa.system.dao.UserDao;
 import com.yunfa.system.entities.User;
-import com.yunfa.system.service.UserService;
+import com.yunfa.system.service.user.UserService;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;

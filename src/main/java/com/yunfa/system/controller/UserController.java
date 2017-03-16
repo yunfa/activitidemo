@@ -1,7 +1,7 @@
 package com.yunfa.system.controller;
 
 import com.yunfa.system.entities.User;
-import com.yunfa.system.service.UserService;
+import com.yunfa.system.service.user.UserService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
