@@ -21,8 +21,8 @@ public class ActivitiController {
 
 	@RequestMapping("/")
 	public ModelAndView index() {
-		System.out.println("activiti index....");
 		ModelAndView view = new ModelAndView("index");
+		activitiService.startProcess();
 		return view;
 	}
 }

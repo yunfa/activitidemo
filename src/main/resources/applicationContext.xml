@@ -8,6 +8,9 @@
                         http://www.springframework.org/schema/context/spring-context-3.1.xsd">
     <!-- 自动扫描 -->
     <context:component-scan base-package="com.yunfa"/>
+    
+    <import resource="activitiContext.xml"/>
+    
     <!-- 引入配置文件 -->
     <bean id="propertyConfigurer"
           class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
@@ -17,9 +20,9 @@
     <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource"
           init-method="init" destroy-method="close">
         <!-- 指定连接数据库的驱动 -->
-        <property name="driverClassName" value="${jdbc.driverClass}"/>
+        <property name="driverClassName" value="${jdbc.driver}"/>
         <property name="url" value="${jdbc.url}"/>
-        <property name="username" value="${jdbc.user}"/>
+        <property name="username" value="${jdbc.username}"/>
         <property name="password" value="${jdbc.password}"/>
 
         <!-- 配置初始化大小、最小、最大 -->
